@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 3.2 (Python 3.7.1 on win32)" generated="20200501 22:25:57.279" rpa="false">
+<suite id="s1" name="Test" source="C:\Users\adria\OneDrive\Documentos\qaninja\robot\test.robot">
+<test id="s1-t1" name="Deve retornar mensagem de boas-vindas">
+<kw name="Welcome" library="app">
+<arguments>
+<arg>Adriano</arg>
+</arguments>
+<assign>
+<var>${result}</var>
+</assign>
+<msg timestamp="20200501 22:25:57.311" level="INFO">${result} = Olá Adriano, bems vindo ao curso básico de Robot Framework!</msg>
+<status status="PASS" starttime="20200501 22:25:57.311" endtime="20200501 22:25:57.311"></status>
+</kw>
+<kw name="Should Be Equal" library="BuiltIn">
+<doc>Fails if the given objects are unequal.</doc>
+<arguments>
+<arg>${result}</arg>
+<arg>Olá Adriano, bem vindo ao curso básico de Robot Framework!</arg>
+</arguments>
+<msg timestamp="20200501 22:25:57.313" level="FAIL">Olá Adriano, bems vindo ao curso básico de Robot Framework! != Olá Adriano, bem vindo ao curso básico de Robot Framework!</msg>
+<status status="FAIL" starttime="20200501 22:25:57.312" endtime="20200501 22:25:57.313"></status>
+</kw>
+<status status="FAIL" starttime="20200501 22:25:57.310" endtime="20200501 22:25:57.313" critical="yes">Olá Adriano, bems vindo ao curso básico de Robot Framework! != Olá Adriano, bem vindo ao curso básico de Robot Framework!</status>
+</test>
+<status status="FAIL" starttime="20200501 22:25:57.280" endtime="20200501 22:25:57.315"></status>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1">Critical Tests</stat>
+<stat pass="0" fail="1">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="0" fail="1" id="s1" name="Test">Test</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
